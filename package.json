@@ -17,24 +17,17 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "jest": {
-      "collectCoverageFrom": [
-        "<rootDir>/src/components/App.js",
-        "<rootDir>/src/components/RandomNumber.jsx"
-      ]
-    },
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/components/App.js",
+      "<rootDir>/src/components/RandomNumber.jsx"
     ]
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "devDependencies": {
     "dom-testing-library": "^3.19.3",
     "react-testing-library": "^6.1.2"
