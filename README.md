@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/Abudu-Samuel/random-number-generator.svg?branch=master)](https://travis-ci.org/Abudu-Samuel/random-number-generator)
+[![codecov](https://codecov.io/gh/Abudu-Samuel/random-number-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/Abudu-Samuel/random-number-generator)
+
 
 # SMS system management
 
