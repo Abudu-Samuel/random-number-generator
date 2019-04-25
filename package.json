@@ -5,12 +5,13 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test  --coverage && codecov  --token=c9572d8c-6fe7-4a0a-b41a-f0b357d2b13c",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -22,10 +23,20 @@
       "not dead",
       "not op_mini all"
     ],
+    "jest": {
+      "collectCoverageFrom": [
+        "<rootDir>/src/components/App.js",
+        "<rootDir>/src/components/RandomNumber.jsx"
+      ]
+    },
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dom-testing-library": "^3.19.3",
+    "react-testing-library": "^6.1.2"
   }
 }
